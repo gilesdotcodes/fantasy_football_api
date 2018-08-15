@@ -65,3 +65,9 @@ post '/football_risers' do
   content_type :json
   fantasy_football_api.risers.to_json
 end
+
+post '/football_fallers' do
+  fantasy_football_api = FantasyFootballApi.new
+  content_type :json
+  fantasy_football_api.fallers.to_json
+end
