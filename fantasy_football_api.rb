@@ -31,7 +31,7 @@ class FantasyFootballApi
   end
 
   def output_name_and_value(player)
-    "#{player['first_name']} #{player['last_name']} - #{format_cost(player['now_cost'])}"
+    "#{player['first_name']} #{player['second_name']} - #{format_cost(player['now_cost'])}"
   end
 
   def format_cost(cost)
