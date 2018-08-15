@@ -2,7 +2,6 @@
 
 require 'httparty'
 require 'sinatra'
-require 'sinatra/json'
 
 class FantasyFootballApi
   def initialize
@@ -63,5 +62,6 @@ end
 
 post '/football_risers' do
   fantasy_football_api = FantasyFootballApi.new
-  json fantasy_football_api.risers
+  content_type :json
+  fantasy_football_api.risers.to_json
 end
