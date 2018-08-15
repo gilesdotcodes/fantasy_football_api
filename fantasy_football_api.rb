@@ -35,7 +35,7 @@ class FantasyFootballApi
   end
 
   def format_cost(cost)
-    "#{cost/10}.#{cost%10}"
+    "£#{cost/10}.#{cost%10}m"
   end
 
   def output_players(players)
